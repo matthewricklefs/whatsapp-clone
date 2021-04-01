@@ -10,7 +10,7 @@ const firebaseConfig = {
 };
 
 // set up access to firebase database
-const app = !firebase.app.length
+const app = !firebase.apps.length
   ? firebase.initializeApp(firebaseConfig)
   : firebase.app();
 
